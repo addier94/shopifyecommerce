@@ -4,6 +4,9 @@ const { withFrameworkConfig } = require('./framework/common/config');
  * @type {import('next').NextConfig} 
  **/
 module.exports = withFrameworkConfig({
+  framework: {
+    name: "shopify"
+  },
   reactStrictMode: true,
   i18n: {
     locales: ["en-US", "es"],
