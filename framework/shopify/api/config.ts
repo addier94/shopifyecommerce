@@ -1,21 +1,21 @@
 
+import { ApiConfig } from "@common/types/api"
 import { fetchApi } from "../utils"
 
 class Config {
-  private config: any
+  private config: ApiConfig
 
-  constructor(config: any) {
+  constructor(config: ApiConfig) {
     this.config = config
   }
 
-  getConfig():any {
+  getConfig():ApiConfig {
     return this.config
   }
 }
 
-
 const configWrapper = new Config({
-  apiUrl: "http://localhost:400/graphql",
+  apiUrl: "http://localhost:4000/graphql",
   fetch: fetchApi
 })
 
