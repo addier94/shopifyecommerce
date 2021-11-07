@@ -22,7 +22,7 @@ export default function Home({
 
   return (
     <div className="root">
-      {/* {JSON.stringify(products)} */}
+      {JSON.stringify(products)}
     </div>
   )
 }
